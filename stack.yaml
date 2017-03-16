@@ -1,0 +1,24 @@
+resolver: nightly-2016-12-05
+
+packages:
+- '.'
+## Extra deps
+- location:
+    git: https://github.com/runeksvendsen/haskoin.git
+    commit: 9add83fd4aa8bc960a15a1d24e6e831981a9f8a4
+  extra-dep: true
+  subdirs:
+    - haskoin-core
+    - haskoin-node
+    - haskoin-wallet
+
+extra-deps:
+- murmur3-1.0.3
+- pbkdf-1.1.1.1
+- secp256k1-0.4.6
+- concurrent-extra-0.7.0.10
+- daemons-0.2.1
+- esqueleto-2.5.1
+
+flags: {}
+extra-package-dbs: []
